@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/172349125?v=4"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="
+# 一级标题 #anki
+这是一级内容的描述（每个带有标签段落下方会产生一串数字，为Anki卡片ID，若Anki中已删除，需要将OB中的对应删除，才能再次点击Generate flashcards，否则就会报错。">
+<meta property="og:title" content="🧠OB2Anki模板 new">
+<meta property="og:description" content="
+# 一级标题 #anki
+这是一级内容的描述（每个带有标签段落下方会产生一串数字，为Anki卡片ID，若Anki中已删除，需要将OB中的对应删除，才能再次点击Generate flashcards，否则就会报错。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://DaveLee2021.github.io/post/%F0%9F%A7%A0OB2Anki-mo-ban-%20new.html">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/172349125?v=4">
+<title>🧠OB2Anki模板 new</title>
+<link href="//unpkg.com/@wooorm/starry-night@2.1.1/style/both.css" rel="stylesheet" />
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">🧠OB2Anki模板 new</h1>
+<div class="title-right">
+    <a href="https://DaveLee2021.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/DaveLee2021/DaveLee2021.github.io/issues/2" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><h1>一级标题 #anki</h1>
+<p>这是一级内容的描述（每个带有标签段落下方会产生一串数字，为Anki卡片ID，若Anki中已删除，需要将OB中的对应删除，才能再次点击Generate flashcards，否则就会报错。可以全选内容，右键选择AnkiID#Del批量删除）</p>
+<h2>二级标题</h2>
+<h3>三级标题1</h3>
+<p>当去做一项新任务或老行当时，可以自我反问？ #anki</p>
+<ul>
+<li>有没有一条更好的途径呢？
+<ul>
+<li>途径1</li>
+<li>途径2</li>
+</ul>
+</li>
+<li>要不要试试看某种新做法呢？
+<ol>
+<li>做法1</li>
+<li>做法2</li>
+</ol>
+</li>
+</ul>
+<p>电子产品是否会削弱我们的学习能力？ #anki</p>
+<ul>
+<li>不会。在需要专注去获取信息或是持续注意力等学习模式时确实会干扰，但是在遇到难题思路卡壳，适时分心，有助于问题的解决。</li>
+</ul>
+<p>如何让学习融入生活？ #anki</p>
+<ul>
+<li>我们无法选择自己的家庭环境、教育背景（感性教育），而唯一能掌控的就是我们怎么去学习；</li>
+<li>新方法完全不需要花费更多的时间、不必付出更多的努力，也不必浪费更多的钱财在任何特别辅导班上；</li>
+<li>学习，归根结底就是你做的每一件事，使其成为一种生活方式！</li>
+</ul>
+<h3>三级标题2</h3>
+<p>我是[[四级问题1]]？ #anki<br>
+屏蔽<code class="notranslate">#</code>类颜色标签，实际图如下：<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/0cc2f17eda40248041aaf343540b68cc6ae362e2483837e35049a67f38482abf/68747470733a2f2f67636f72652e6a7364656c6976722e6e65742f67682f737072696e677261696e312f696d6167652f696d672f32303232303931323233313630322e706e67"><img src="https://camo.githubusercontent.com/0cc2f17eda40248041aaf343540b68cc6ae362e2483837e35049a67f38482abf/68747470733a2f2f67636f72652e6a7364656c6976722e6e65742f67682f737072696e677261696e312f696d6167652f696d672f32303232303931323233313630322e706e67" alt="" data-canonical-src="https://gcore.jsdelivr.net/gh/springrain1/image/img/20220912231602.png" style="max-width: 100%;"></a></p>
+<pre class="notranslate"><code class="notranslate">- **我更**想冲抢更多的*篮板球*，~~寻求赢球~~的机会11。
+- &lt;u&gt;我更&lt;/u&gt;想冲抢更多的&lt;font color=#ff0000&gt;篮板球&lt;/font&gt;，&lt;font color=#ff9900&gt;寻求赢球&lt;/font&gt;的机会12。
+- &lt;font color=#ffff00&gt;我更&lt;/font&gt;想冲抢更多的&lt;span style="background-color:#ffff00"&gt;篮板球&lt;/span&gt;，&lt;span style="background-color:#00ff00"&gt;寻求赢球&lt;/span&gt;的机会13。
+- 我更想冲抢更多的篮板球，寻求赢球的机会14。
+</code></pre>
+<p>我是[[四级问题2]]？ #anki</p>
+<ul>
+<li>我更想冲抢更多的<code class="notranslate">篮板球</code>，寻求赢球的机会16。（行内代码块）</li>
+<li>超链接：（1）外链 <a href="https://www.baidu.com/" rel="nofollow">https://www.baidu.com/</a> ；（2）内链：<a href="https://www.baidu.com/" rel="nofollow">百度</a> ；（3）双链：[[2022_03_05]]</li>
+<li>图床： <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/ea512239d44d8b1504a8ca520b9936f8e8531adc41b1e0e593d0c6a5418b92e4/68747470733a2f2f63646e2e6c6f677365712e636f6d2f25324663356331633738352d366632302d343737392d613637662d66393336386665613536663937623366316564302d613063372d346435652d396430302d323733366231633937326134323032315f30395f30345f696d6167652e706e673f457870697265733d34373834333433353133265369676e61747572653d6572676d35434932554a613236786872346246627e6e7a76306847514e394755594b484d613443614456463855426b36576a434758385a7e6f69413939767a68684b7077742d6b376634734c62635536492d4877455a6f3731506f54495a525938675a6e5745783432676a575755763562554c4e3969487436786c662d4a54466b6476514b544b53514e356d45624b656e45475776595564625a5a7757326844476c51565048754e5774473743395163667a646a424d4d76476439485974324a3066386639727a414f6344364f78365353676b7a7a4143494f4f5663387834464b52457e5a6b45774c7a3030504b464735703359694f4a3144646a6b3047794d6d4439704c6c416c367a656a763174784c444a6a516f794451616a33515359627544555569774e3064454b556c66676554364532634161627531507438564d7e486d6a2d3135705070587545505a71366d7e647566415f5f264b65792d506169722d49643d41504b414a45354343443658374d503650544541"><img src="https://camo.githubusercontent.com/ea512239d44d8b1504a8ca520b9936f8e8531adc41b1e0e593d0c6a5418b92e4/68747470733a2f2f63646e2e6c6f677365712e636f6d2f25324663356331633738352d366632302d343737392d613637662d66393336386665613536663937623366316564302d613063372d346435652d396430302d323733366231633937326134323032315f30395f30345f696d6167652e706e673f457870697265733d34373834333433353133265369676e61747572653d6572676d35434932554a613236786872346246627e6e7a76306847514e394755594b484d613443614456463855426b36576a434758385a7e6f69413939767a68684b7077742d6b376634734c62635536492d4877455a6f3731506f54495a525938675a6e5745783432676a575755763562554c4e3969487436786c662d4a54466b6476514b544b53514e356d45624b656e45475776595564625a5a7757326844476c51565048754e5774473743395163667a646a424d4d76476439485974324a3066386639727a414f6344364f78365353676b7a7a4143494f4f5663387834464b52457e5a6b45774c7a3030504b464735703359694f4a3144646a6b3047794d6d4439704c6c416c367a656a763174784c444a6a516f794451616a33515359627544555569774e3064454b556c66676554364532634161627531507438564d7e486d6a2d3135705070587545505a71366d7e647566415f5f264b65792d506169722d49643d41504b414a45354343443658374d503650544541" alt="2021_09_04_image.png" data-canonical-src="https://cdn.logseq.com/%2Fc5c1c785-6f20-4779-a67f-f9368fea56f97b3f1ed0-a0c7-4d5e-9d00-2736b1c972a42021_09_04_image.png?Expires=4784343513&amp;Signature=ergm5CI2UJa26xhr4bFb~nzv0hGQN9GUYKHMa4CaDVF8UBk6WjCGX8Z~oiA99vzhhKpwt-k7f4sLbcU6I-HwEZo71PoTIZRY8gZnWEx42gjWWUv5bULN9iHt6xlf-JTFkdvQKTKSQN5mEbKenEGWvYUdbZZwW2hDGlQVPHuNWtG7C9QcfzdjBMMvGd9HYt2J0f8f9rzAOcD6Ox6SSgkzzACIOOVc8x4FKRE~ZkEwLz00PKFG5p3YiOJ1Ddjk0GyMmD9pLlAl6zejv1txLDJjQoyDQaj3QSYbuDUUiwN0dEKUlfgeT6E2cAabu1Pt8VM~Hmj-15pPpXuEPZq6m~dufA__&amp;Key-Pair-Id=APKAJE5CCD6X7MP6PTEA" style="max-width: 100%;"></a>
+</li>
+<li>行内公式： $h(\theta)=\sum_{j=0}^{n} \theta_{j} x_{j}$
+</li>
+<li>行外公式：</li>
+<li>$$h(\theta)=\sum_{j=0}^{n} \theta_{j} x_{j}$$</li>
+</ul>
+<p>我是[[四级问题3]]？ #行动卡 #anki</p>
+<ul>
+<li>答案：五级答案</li>
+<li>补充：六级内容</li>
+<li>引用：如何学习-书名页</li>
+</ul>
+<p>我是[[四级问题4]]？ #anki</p>
+<ul>
+<li>代码块</li>
+</ul>
+<div class="highlight highlight-source-java"><pre class="notranslate"><span class="pl-smi">System</span>.<span class="pl-s1">out</span>.<span class="pl-en">println</span>(<span class="pl-s">"Hey this is not :: a valid inline card"</span>);</pre></div>
+<h3>三级标题3</h3>
+<p>这是==一个==或==多个==填空题（高亮内容为挖空内容）</p>
+<p>The alternative is this type of {cloze} that is totally equal to {1:cloze}. With the number you can specify the order {2:later cloze}.（<code class="notranslate">{}</code>多卡填空题，1为第一张卡处挖空，2为第二张卡处挖空）</p></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer">Copyright © <span id="year"></span><a href="https://DaveLee2021.github.io"> avelee </a>
+<p>
+<span id="runday"></span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a>
+</p>
+
+<script>
+if(""!=""){
+    var now=new Date();
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("year").innerHTML=now.getFullYear();
+    if(""!=""){document.getElementById("runday").innerHTML=" • "+"网站运行"+diffDay+"天"+" • ";}
+    else{document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";}
+}
+</script>
+</div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n\n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","DaveLee2021/DaveLee2021.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+</script>
+<script>MathJax = {tex: {inlineMath: [["$", "$"]]}};</script><script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</html>
